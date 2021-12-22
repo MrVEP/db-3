@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS Tracks (
 	id serial primary key,
 	name varchar(40) unique not null,
 	length integer check(length>0),
-	album_id integer references Albums(id),
+	album_id integer references Albums(id)
 );
 
 CREATE TABLE IF NOT EXISTS TracksCollections (
