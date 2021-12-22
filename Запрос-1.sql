@@ -1,6 +1,12 @@
-CREATE TABLE IF NOT EXISTS Genres (id serial primary key, name varchar(100) unique not null);
+CREATE TABLE IF NOT EXISTS Genres (
+	id serial primary key,
+	name varchar(100) unique not null
+);
 
-CREATE TABLE IF NOT EXISTS Singers (id serial primary key, name varchar(40) unique not null);
+CREATE TABLE IF NOT EXISTS Singers (
+	id serial primary key,
+	name varchar(40) unique not null
+);
 
 CREATE TABLE IF NOT EXISTS GenresSingers (
 	id serial primary key,
